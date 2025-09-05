@@ -43,6 +43,9 @@ mkdir ansible if not present
 
 or else go to cd /etc/ansible
 
+yum install httpd
+systemctl start httpd
+systemctl enable httpd
 
 Go to sir's repo -> https://github.com/sanjayguruji/ansible-code
 
@@ -72,6 +75,7 @@ write playbook.yaml
 
 ansible-playbook firstplaybook.yaml --syntax-check
 
-ansible-playbook firstplaybook.yaml -C 
+ansible-playbook firstplaybook.yaml -C  (dry run)
 
+ansible-playbook firstplaybook.yaml
 
