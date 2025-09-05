@@ -1,0 +1,65 @@
+Host an instance and launch
+
+set machine name
+
+yum install docker* -y (in AWS its present but in redhat or ubuntu do below steps)
+
+Go to install docker engine website
+
+Move to RHEL -> and follow the steps on website to install docker
+
+systemctl start docker
+
+systemctl enable docker
+
+docker info (var/lib/docker where all docker data is stored and the storage driver used is Overlay2)
+
+docker ps -a (to know about the containers running)
+
+docker image ls (to know about the image present)
+
+TO DOWNLOAD DOCKER IMAGES:
+
+Go to docker hub website
+
+search for ubuntu and open it (tags help in separating versions)
+
+copy the command and paste in terminal
+
+Go to website and search httpd -> and copy the command paste in terminal to run
+
+Again search for centos -> copy and paste
+
+docker image ls to look for image downloads
+
+docker --help (to know about the commands)
+
+docker run -it --name devops ubuntu:rolling /bin/bash (it means interactive mode)
+
+name of container, name of image:tag
+
+the shell will change
+
+cat /etc/os-release
+
+take duplicate of instance in another terminal - connect it and then type
+
+docker ps -a
+
+go to docker container
+
+apt update -y
+
+apt install apache2 -y
+
+service apache2 start
+
+apt install curl --> curl is like a command line browser
+
+cd /var/www/html
+
+echo "This is my application one" > index.html
+
+ll
+
+curl http://localhost
