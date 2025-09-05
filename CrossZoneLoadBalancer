@@ -19,3 +19,5 @@ select http and target group then create load balancer
 Now go to load balancer
 
 wait for it to get active Now select the load balancer created Scroll and copy the DNS name and paste it on website
+
+cd /etc/www/html
